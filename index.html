@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team SumOne ID Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="form-container">
+        <h3>SumOne ID CARD</h3>
+        <label>Full Name</label>
+        <input type="text" id="inputName" placeholder="Enter member name">
+
+        <label>Photo <span class="hint">(150x150 px)</span></label>
+        <input type="file" id="inputPic" accept="image/*">
+
+        <button id="downloadBtn">Generate & Download</button>
+    </div>
+
+    <div id="id-card-wrap">
+        <div id="id-card">
+            <div class="header-stripe"></div>
+            <div class="card-title">
+                <img src="public/logo.png" alt="SumOne Logo" class="logo-img">
+            </div>
+
+            <img id="cardImg" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="profile-img" alt="Profile">
+
+            <div class="name" id="cardName">MEMBER NAME</div>
+            <div class="role-tag">SumOne TEAM MEMBER</div>
+
+            <br>
+            <div class="id-highlight">ID: <span id="cardID">SUM-289862</span></div>
+
+            <div class="footer">
+                <div class="leader-highlight">
+                    Leader: <span class="leader-name">Ekramul</span>
+                </div>
+
+                <div class="motto-highlight">
+                    "One Team. Infinite Sums."
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
